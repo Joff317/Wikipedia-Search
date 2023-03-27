@@ -43,7 +43,7 @@ function createContent(data) {
     data.forEach((x) => {
       const url = `https://en.wikipedia.org/?curid=${x.pageid}`;
       const content = document.createElement("div");
-      content.className = "results-item";
+      content.className = "result-item";
       content.innerHTML = `
          <h3 class="result-title"> 
             <a href=${url}>${x.title}</a>
